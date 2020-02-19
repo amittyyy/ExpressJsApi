@@ -6,7 +6,8 @@ module.exports = {
     ** which gets resolved or rejected based
     ** on the result from the API
     */
-    make_API_call : function(url){
+    make_API_call : function(url){   
+        console.log('HelperCall.js:- Line10:- Make_Api_call function');   
         return new Promise((resolve, reject) => {
             request(url, { json: true }, (err, res, body) => {
               if (err) reject(err)
